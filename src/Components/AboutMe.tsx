@@ -1,8 +1,9 @@
-'use client'
 import React from 'react'
 
-export const AboutMe = () => {
+const AboutMe = () => {
   return (
-    <div>AboutMe</div>
+    <div>page</div>
   )
 }
+
+export default AboutMe

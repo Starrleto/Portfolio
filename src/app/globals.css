@@ -8,3 +8,33 @@
     align-items: center;
     width: 100%;
 }
+
+.padding{
+    padding: 20px;
+}
+
+.small-line{
+    line-height: 10px;
+}
+
+.separate-bottom{
+    padding-bottom: 10px;
+}
+
+@font-face {
+    font-family: daydream;
+    src: url('../assets/Daydream.ttf');
+}
+
+@font-face {
+    font-family: rowdies;
+    src: url('../assets/Rowdies-Regular.ttf');
+}
+
+.daydream{
+    font-family: daydream;
+}
+
+.rowdies{
+    font-family: rowdies;
+}
