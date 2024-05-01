@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Nav from 'react-bootstrap/Nav';
-import {Link} from "react-router-dom";
 
 const NavbarComponent = () => {
   return (
@@ -12,13 +11,13 @@ const NavbarComponent = () => {
 
     <Nav variant="tabs" defaultActiveKey="link" className='justify-center na'>
       <Nav.Item>
-        <Nav.Link as={Link} to="/" eventKey="link">About Me</Nav.Link>
+        <Nav.Link eventKey="link">About Me</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to="/Projects" eventKey="link-1">My Projects</Nav.Link>
+        <Nav.Link eventKey="link-1">My Projects</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to="/ArtGallery" eventKey="link-2">Art Gallery</Nav.Link>
+        <Nav.Link eventKey="link-2">Art Gallery</Nav.Link>
       </Nav.Item>
     </Nav>
 
