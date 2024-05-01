@@ -1,10 +1,24 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client'
+import NavbarComponent from "@/Components/NavbarComponent";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { AboutMe } from "@/Components/AboutMe";
+import { ArtGaller } from "@/Components/ArtGaller";
+import { Projects } from "@/Components/Projects";
 
 export default function Home() {
   return (
     <div>
-        
+      <BrowserRouter>
+      <NavbarComponent></NavbarComponent>
+
+        <Routes>
+          <Route path="/" element={<AboutMe/>}></Route>
+          <Route path="/ArtGallery" element={<ArtGaller/>}></Route>
+          <Route path="/Projects" element={<Projects/>}></Route>
+        </Routes>
+
+      </BrowserRouter>
     </div>
   );
 }
