@@ -13,7 +13,8 @@ const AboutMe = () => {
     <div className='different-bg padding'>
       <Row>
         <Col>
-        hi
+          <h1 className='rowdies'>I'm Ellie Rasuli</h1>
+          <p></p>
         </Col>
         <Col>
           <Image src={head} alt={"A picture of me"} width={300} height={300} className='headshot'></Image>

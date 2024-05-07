@@ -69,11 +69,11 @@
 }
 
 .different-bg{
-    background-color: gray;
+    background-color: rgb(140, 150, 167) !important;
 }
 
-body{
-    background-color: pink;
+.nav-text{
+    color: rgb(50, 26, 157) !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {

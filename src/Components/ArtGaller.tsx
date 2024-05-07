@@ -8,7 +8,7 @@ export const ArtGaller = () => {
   return (
     <div className='bigger-padding'>
       
-    <Image src={one} alt='Fun' width={500} height={700} className='image-skew'></Image>
+    <Image src={one} alt='Fun' width={500} height={700} className='image-skew img-fluid'></Image>
 
     </div>
   )
