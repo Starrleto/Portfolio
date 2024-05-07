@@ -21,6 +21,10 @@
     padding-bottom: 10px;
 }
 
+.App-logo{
+    padding: 30px;
+}
+
 @font-face {
     font-family: daydream;
     src: url('../assets/Daydream.ttf');
@@ -38,3 +42,51 @@
 .rowdies{
     font-family: rowdies;
 }
+
+.image-skew{
+    transform: rotate(5deg);
+}
+
+.image-skew-r{
+    transform: rotate(-5deg);
+}
+
+.bigger-padding{
+    padding: 40px;
+}
+
+.project-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headshot{
+    object-fit: cover;
+    border-radius: 40px;
+    object-position: 100% 30%;
+}
+
+.different-bg{
+    background-color: gray;
+}
+
+body{
+    background-color: pink;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: float infinite 1s ease-in-out alternate;
+    }
+  }
+  
+  @keyframes float {
+    from {
+      transform:translate();
+    }
+    to {
+      transform: translate(0px, 10px);
+    }
+  }

@@ -15,14 +15,14 @@ export default function Home() {
         <div className='top'>
         
         <div className='separate-bottom'>
-          <h1 className='daydream padding'>✰ Welcome! ✰</h1>
+          <h1 className='daydream App-logo'>✰ Welcome! ✰</h1>
           <p className='rowdies small-line'>Ellie Rasuli</p>
           <p className='rowdies small-line'>Web Developer ✰ Game Developer ✰ Artist </p>
         </div>
     
         <Nav variant="tabs" defaultActiveKey="link" className='justify-center na'>
           <Nav.Item>
-            <Nav.Link className='rowdies' eventKey="link" onClick={() => {setPage("AboutMe")}}>About Me</Nav.Link>
+            <Nav.Link className='rowdies' eventKey="link" onClick={() => {setPage("AboutMe")}}>Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link className='rowdies' eventKey="link-1" onClick={() => {setPage("Projects")}}>My Projects</Nav.Link>
