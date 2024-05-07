@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import one from '../assets/images/as.png';
+import one from '../assets/art/as.png';
 
 export const ArtGaller = () => {
   return (
