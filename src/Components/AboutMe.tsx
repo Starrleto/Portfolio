@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,6 +8,16 @@ import head from '../assets/Ellie_Rasuli_02_CSAS6_Headshots (1).jpg';
 const AboutMe = () => {
 
   const [loaded, setLoaded] = useState<boolean>(false);
+
+  function getInitialData () { // Check if loaded status has been changed before running, this causes it to run only once!
+    if(loaded)
+      console.log("Loaded");
+  }
+
+  useEffect(() => {
+    getInitialData(); // Call function BEFORE  changing loaded status
+    setLoaded(true);
+  }, [loaded])
 
   return (
     <div className='different-bg'>
