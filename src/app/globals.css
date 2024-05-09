@@ -33,6 +33,10 @@
     color: #fc6038;
 }
 
+.i-had-a-stroke{
+    -webkit-text-stroke: 2px #0d2244;
+}
+
 @font-face {
     font-family: daydream;
     src: url('../assets/Daydream.ttf');
@@ -85,8 +89,15 @@
 }
 
 .different-bg{
-    background-color: #98C1D9;
+    background-color: #b7d3e4;
+}
+
+.dark-border{
     border-bottom: #293241 5px dashed;
+}
+
+.mid-bg{
+    background-image: linear-gradient(to bottom, #b7d3e4, #e1f4f4);
 }
 
 .different-bg-darker{
@@ -108,11 +119,12 @@
 }
 
 .projs.active{
-    background-color: #98C1D9 !important;
+    background-color: #b7d3e4 !important;
 }
 
 .art.active{
-    background-color: #98C1D9 !important;
+    background-color: #EE6C4D !important;
+    color: white !important;
 }
 
 .con.active{
@@ -127,7 +139,34 @@
 }
 
 .border-yeah{
-    border: #3D5A80 2px solid;
+    border: #0d2244 3px solid;
+}
+
+.project-links{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: rowdies;
+    color: #fc6038;
+}
+
+.top-light-border{
+    border-top: #b7d3e4 5px dashed;
+}
+
+.lighter-borders{
+    border-top: #e1f4f4 6px dotted;
+    border-bottom: #e1f4f4 6px dotted;
+}
+
+.lighter-borders-2{
+    border-top: #e1f4f4 6px dashed;
+}
+
+.icons{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 10px;
+    filter: invert(100);
 }
 
 @media (prefers-reduced-motion: no-preference) {
