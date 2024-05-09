@@ -17,7 +17,7 @@ const AboutMe = () => {
     <div>
       <Row className='different-bg padding'>
         <Col>
-          <h1 className='rowdies'>I'm Ellie Rasuli</h1>
+          <h1 className='rowdies'>Im Ellie Rasuli</h1>
           <p className='rowdies orang-text'>Back End Developer ✰ Front End Developer ✰ Video Game Developer </p>
           <p className='rowdies small-line orang-text'> Artist ✰ Teacher </p>
           <p></p>
