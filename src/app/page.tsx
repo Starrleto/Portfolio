@@ -12,28 +12,21 @@ export default function Home() {
   const [page, setPage] = useState<string>("AboutMe");
 
   return (
-    <div>
+    <div className='bg'>
         <div className='top'>
-        
-        <div className='separate-bottom'>
-          <h1 className='daydream App-logo'>✰ Welcome! ✰</h1>
-          <p className='rowdies'>Ellie Rasuli</p>
-          <p className='rowdies'>Back End Developer ✰ Front End Developer ✰ Video Game Developer </p>
-          <p className='rowdies small-line'> Artist ✰ Teacher </p>
-        </div>
     
-        <Nav variant="tabs" defaultActiveKey="link" className='justify-center na'>
+        <Nav variant="pills" defaultActiveKey="link" className='justify-center na padding'>
           <Nav.Item>
-            <Nav.Link className='rowdies different-bg nav-text' eventKey="link" onClick={() => {setPage("AboutMe")}}>Home</Nav.Link>
+            <Nav.Link className='rowdies home nav-text' eventKey="link" onClick={() => {setPage("AboutMe")}}>Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className='rowdies nav-text' eventKey="link-1" onClick={() => {setPage("Projects")}}>My Projects</Nav.Link>
+            <Nav.Link className='rowdies projs nav-text' eventKey="link-1" onClick={() => {setPage("Projects")}}>My Projects</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className='rowdies nav-text' eventKey="link-2" onClick={() => {setPage("Gallery")}}>Art Gallery</Nav.Link>
+            <Nav.Link className='rowdies art nav-text' eventKey="link-2" onClick={() => {setPage("Gallery")}}>Art Gallery</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className='rowdies nav-text' eventKey="link-3" onClick={() => {setPage("Contact")}}>Contact Me</Nav.Link>
+            <Nav.Link className='rowdies con nav-text' eventKey="link-3" onClick={() => {setPage("Contact")}}>Contact Me</Nav.Link>
           </Nav.Item>
         </Nav>
 

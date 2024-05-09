@@ -8,6 +8,7 @@ import rps from '../assets/rps.png';
 import cal from '../assets/calculator.png';
 import ran from '../assets/random.png';
 import all from '../assets/allforone.png'
+import wea from '../assets/weather.png';
 
 export const Projects = () => {
   return (
@@ -19,9 +20,9 @@ export const Projects = () => {
         <h1>View My Work</h1>
       </div>
 
-      <Row>
+      <Row className='different-bg margin-bottom'>
         <Col>
-          <Image src={all} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew-r img-fluid'></Image>
+          <Image src={all} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew-r img-fluid border-yeah'></Image>
         </Col>
         <Col className='project-col'>
           <a href='https://ambitious-mushroom-05a532b1e.4.azurestaticapps.net/' target='_blank' className=''>All For One!</a>
@@ -30,19 +31,19 @@ export const Projects = () => {
         </Col>
       </Row>
 
-      <Row>
+      <Row className='different-bg margin-bottom'>
         <Col className='project-col'>
           <a href='https://rock-paper-scissors-lizard-spock-rosy-sigma.vercel.app/' target='_blank'>Rock Paper Scissors Game!</a>
           <p className='rowdies'>This project was completed in about a week using React</p>
         </Col>
         <Col>
-          <Image src={rps} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew img-fluid'></Image>
+          <Image src={rps} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew img-fluid border-yeah'></Image>
         </Col>
       </Row>
 
-      <Row>
+      <Row className='different-bg margin-bottom'>
         <Col>
-          <Image src={cal} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew-r img-fluid'></Image>
+          <Image src={cal} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew-r img-fluid border-yeah'></Image>
         </Col>
         <Col className='project-col'>
           <a href='https://calculator-nextjs-369eneswk-soupletts-projects.vercel.app/' target='_blank'>A Tip Calculator!</a>
@@ -51,13 +52,23 @@ export const Projects = () => {
       </Row>
       
 
-      <Row>
+      <Row className='different-bg margin-bottom'>
+        <Col className='project-col'>
+          <a href='https://weather-app-funnies.vercel.app/' target='_blank'>A Weather App!</a>
+          <p className='rowdies'>This project was completed in about a week using regular HTML and JS.</p>
+        </Col>
+        <Col>
+          <Image src={wea} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew-r img-fluid border-yeah'></Image>
+        </Col>
+      </Row>
+      
+      <Row className='different-bg margin-bottom'>
+        <Col>
+          <Image src={ran} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew img-fluid border-yeah'></Image>
+        </Col>
         <Col className='project-col'>
           <a href='https://random-generator-eight.vercel.app/' target='_blank'>A Random group/name generator!</a>
           <p className='rowdies'>This project was completed in a few days using regular HTML and JS.</p>
-        </Col>
-        <Col>
-          <Image src={ran} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew img-fluid'></Image>
         </Col>
       </Row>
     </Container>
