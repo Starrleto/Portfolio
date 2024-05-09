@@ -15,9 +15,9 @@ const AboutMe = () => {
   }
 
   useEffect(() => {
-    getInitialData(); // Call function BEFORE  changing loaded status
+    getInitialData(); // Call function BEFORE  changing loaded status, no dependency
     setLoaded(true);
-  }, [loaded])
+  })
 
   return (
     <div className='different-bg'>
