@@ -4,6 +4,7 @@ import { ArtGaller } from '@/Components/ArtGaller';
 import { ContactMe } from '@/Components/ContactMe';
 import { Projects } from '@/Components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/wickedcss.min.css';
 import { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 

@@ -16,10 +16,13 @@ export const Projects = () => {
       
     <Container className='bigger-padding'>
       
-
+{/* All For One */}
       <Row className='different-bg margin-bottom lighter-borders'>
-        <Col>
-          <a href='https://ambitious-mushroom-05a532b1e.4.azurestaticapps.net/' target='_blank'><Image src={all} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew-r img-fluid border-yeah'></Image></a>
+        <Col className='picture slideRight'>
+          <a href='https://ambitious-mushroom-05a532b1e.4.azurestaticapps.net/' target='_blank'><Image src={all} alt="All For One API website" width={500} className='image-skew-r img-fluid border-yeah image-obj'></Image></a>
+          <div className='middle'>
+              <p className='rowdies big-text'>Click to view!</p>
+          </div>
         </Col>
         <Col className='project-col'>
           <a href='https://ambitious-mushroom-05a532b1e.4.azurestaticapps.net/' target='_blank' className='project-links'>➤ All For One!</a>
@@ -28,19 +31,27 @@ export const Projects = () => {
         </Col>
       </Row>
 
+{/* Rock Paper Scissors */}
       <Row className='different-bg margin-bottom lighter-borders'>
         <Col className='project-col'>
           <a className='project-links' href='https://rock-paper-scissors-lizard-spock-rosy-sigma.vercel.app/' target='_blank'>➤ Rock Paper Scissors Game!</a>
           <p className='rowdies'>This project was completed in about a week using React</p>
         </Col>
-        <Col>
-          <Image src={rps} alt="Rock Paper Scissor Lizard Spock" width={450} className='image-skew img-fluid border-yeah'></Image>
+        <Col className='slideLeft picture'>
+          <a href='https://rock-paper-scissors-lizard-spock-rosy-sigma.vercel.app/' target='_blank'><Image src={rps} alt="Rock Paper Scissor Lizard Spock" width={450} className='image-skew img-fluid border-yeah image-obj'></Image></a>
+          <div className='middle'>
+              <p className='rowdies big-text'>Click to view!</p>
+          </div>
         </Col>
       </Row>
 
+{/* Tip Calculator */}
       <Row className='different-bg margin-bottom lighter-borders'>
-        <Col>
-          <Image src={cal} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew-r img-fluid border-yeah'></Image>
+        <Col className='slideRight picture'>
+          <a href='https://calculator-nextjs-369eneswk-soupletts-projects.vercel.app/' target='_blank'><Image src={cal} alt="Tip Calculator Website" width={500} className='image-skew-r img-fluid border-yeah image-obj'></Image></a>
+          <div className='middle'>
+              <p className='rowdies big-text'>Click to view!</p>
+          </div>
         </Col>
         <Col className='project-col'>
           <a className='project-links' href='https://calculator-nextjs-369eneswk-soupletts-projects.vercel.app/' target='_blank'>➤ A Tip Calculator!</a>
@@ -48,20 +59,27 @@ export const Projects = () => {
         </Col>
       </Row>
       
-
+{/* Weather App */}
       <Row className='different-bg margin-bottom lighter-borders'>
         <Col className='project-col'>
           <a className='project-links' href='https://weather-app-funnies.vercel.app/' target='_blank'>➤ A Weather App!</a>
           <p className='rowdies'>This project was completed in about a week using regular HTML and JS.</p>
         </Col>
-        <Col>
-          <Image src={wea} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew-r img-fluid border-yeah'></Image>
+        <Col className='slideLeft picture'>
+          <a href='https://weather-app-funnies.vercel.app/' target='_blank'><Image src={wea} alt="Weather App Website" width={500} className='image-skew-r img-fluid border-yeah image-obj'></Image></a>
+          <div className='middle'>
+              <p className='rowdies big-text'>Click to view!</p>
+          </div>
         </Col>
       </Row>
       
+{/* Random Group Generator */}
       <Row className='different-bg margin-bottom lighter-borders'>
-        <Col>
-          <Image src={ran} alt="Rock Paper Scissor Lizard Spock" width={500} className='image-skew img-fluid border-yeah'></Image>
+        <Col className='slideRight picture'>
+          <a target='_blank' href='https://random-generator-eight.vercel.app/'><Image src={ran} alt="Random Group Generator" width={500} className='image-skew img-fluid border-yeah image-obj'></Image></a>
+          <div className='middle'>
+              <p className='rowdies big-text'>Click to view!</p>
+          </div>
         </Col>
         <Col className='project-col'>
           <a className='project-links' href='https://random-generator-eight.vercel.app/' target='_blank'>➤ A Random group/name generator!</a>
