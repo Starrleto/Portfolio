@@ -39,11 +39,11 @@ export const ContactMe = () => {
     }
 
   return (
-    <div className='dark-border'>
+    <div className='dark-border margin-top'>
         <Container>
             <Row>
                 <Col sm={12} md={6}>
-                    <h3 className='bigger-padding rowdies orang-text'>Any Questions or Inquiries? Feel free to Contact Me!</h3>
+                    <h3 className='bigger-padding rowdies orang-text' id='contact'>Any Questions or Inquiries? Feel free to Contact Me!</h3>
                     <p className='rowdies'>Email: ellierasuli@gmail.com</p>
                     <p className='rowdies'>Phone: (209)-480-4810</p>
                 </Col>

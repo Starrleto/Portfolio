@@ -134,6 +134,19 @@
     color: #293241 !important;
 }
 
+.black{
+    color: black;
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+.border-color{
+    border-color: #3D5A80;
+    border-width: 2px;
+}
+
 .home.active{
     background-color: #EE6C4D !important;
     color: white !important;
@@ -231,7 +244,8 @@
 
 .flex-around{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
 }
 
 .right{
