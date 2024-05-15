@@ -6,15 +6,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import rps from '../assets/rps.png';
 import cal from '../assets/calculator.png';
-import ran from '../assets/random.png';
+import rgb from '../assets/rgb.png'
 import all from '../assets/allforone.png'
 import wea from '../assets/weather.png';
 
 export const Projects = () => {
   return (
-    <div>
+    <div className='dark-border-top'>
       
     <Container className='bigger-padding'>
+
+    <h1 className='bigger-padding rowdies orang-text'>Completed Projects</h1>
       
 {/* All For One */}
       <Row className='different-bg margin-bottom lighter-borders'>
@@ -28,6 +30,35 @@ export const Projects = () => {
           <a href='https://ambitious-mushroom-05a532b1e.4.azurestaticapps.net/' target='_blank' className='project-links'>➤ All For One!</a>
           <p className='rowdies'>I completed both Backened and Frontend work on this website in about a week.</p>
           <p className='rowdies'>I made the  Frontend design with React, and the API / Endpoints in C#. Both are hosted with Microsoft Azure.</p>
+        </Col>
+      </Row>
+
+      {/* Weather App */}
+      <Row className='different-bg margin-bottom lighter-borders'>
+        <Col className='project-col' sm={12} md={6}>
+          <a className='project-links' href='https://weather-app-funnies.vercel.app/' target='_blank'>➤ A Weather App!</a>
+          <p className='rowdies'>This project was completed in about a week using regular HTML and JS.</p>
+        </Col>
+        <Col className='slideLeft picture' sm={12} md={6}>
+          <a href='https://weather-app-funnies.vercel.app/' target='_blank'><Image src={wea} alt="Weather App Website" width={500} className='image-skew-r img-fluid border-yeah image-obj'></Image></a>
+          <div className='middle'>
+              <p className='rowdies big-text'>Click to view!</p>
+          </div>
+        </Col>
+      </Row>
+
+{/* RGB */}
+      <Row className='different-bg margin-bottom lighter-borders'>
+        <Col className='slideRight picture' sm={12} md={6}>
+          <a href='https://starrlet.itch.io/rgb' target='_blank'><Image src={rgb} alt="Tip Calculator Website" width={500} className='image-skew img-fluid border-yeah image-obj'></Image></a>
+          <div className='middle'>
+              <p className='rowdies big-text'>Click to view!</p>
+          </div>
+        </Col>
+        <Col className='project-col' sm={12} md={6}>
+          <a className='project-links' href='https://starrlet.itch.io/rgb' target='_blank'>➤ RGB </a>
+          <p className='rowdies'>This game was developed in Unity, everything besides the music, including the coding and art, was made by myself.</p>
+          <p className='rowdies'>This game was submitted for a Highschool competition, and I recieved third place in the state of California with it. It can now be downloaded on itch.IO</p>
         </Col>
       </Row>
 
@@ -59,11 +90,12 @@ export const Projects = () => {
         </Col>
       </Row>
       
-{/* Weather App */}
+      <h1 className='bigger-padding rowdies orang-text'>Work In Progress</h1>
+
       <Row className='different-bg margin-bottom lighter-borders'>
         <Col className='project-col' sm={12} md={6}>
-          <a className='project-links' href='https://weather-app-funnies.vercel.app/' target='_blank'>➤ A Weather App!</a>
-          <p className='rowdies'>This project was completed in about a week using regular HTML and JS.</p>
+          <a className='project-links' href='https://weather-app-funnies.vercel.app/' target='_blank'>➤ Vindicate</a>
+          <p className='rowdies'>  </p>
         </Col>
         <Col className='slideLeft picture' sm={12} md={6}>
           <a href='https://weather-app-funnies.vercel.app/' target='_blank'><Image src={wea} alt="Weather App Website" width={500} className='image-skew-r img-fluid border-yeah image-obj'></Image></a>
@@ -72,20 +104,7 @@ export const Projects = () => {
           </div>
         </Col>
       </Row>
-      
-{/* Random Group Generator */}
-      <Row className='different-bg margin-bottom lighter-borders'>
-        <Col className='slideRight picture' sm={12} md={6}>
-          <a target='_blank' href='https://random-generator-eight.vercel.app/'><Image src={ran} alt="Random Group Generator" width={500} className='image-skew img-fluid border-yeah image-obj'></Image></a>
-          <div className='middle'>
-              <p className='rowdies big-text'>Click to view!</p>
-          </div>
-        </Col>
-        <Col className='project-col' sm={12} md={6}>
-          <a className='project-links' href='https://random-generator-eight.vercel.app/' target='_blank'>➤ A Random group/name generator!</a>
-          <p className='rowdies'>This project was completed in a few days using regular HTML and JS.</p>
-        </Col>
-      </Row>
+
     </Container>
 
     </div>

@@ -39,7 +39,7 @@ export const ContactMe = () => {
     }
 
   return (
-    <div>
+    <div className='dark-border'>
         <Container>
             <Row>
                 <Col sm={12} md={6}>

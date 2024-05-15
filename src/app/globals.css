@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.white-text{
+    color: white;
+}
+
 .padding{
     padding: 20px;
 }
@@ -19,6 +23,10 @@
 
 .separate-bottom{
     padding-bottom: 10px;
+}
+
+.separate-side{
+    margin-right: 15px;
 }
 
 .margin-bottom{
@@ -103,6 +111,10 @@
 
 .dark-border{
     border-bottom: #293241 5px dashed;
+}
+
+.dark-border-top{
+    border-top: #293241 5px dashed;
 }
 
 .mid-bg{
@@ -211,6 +223,31 @@
   .big-text{
     font-size: 25px;
   }
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.big-test{
+    font-size: 50px;
+}
+
+.big-text{
+    font-size: 30px;
+    text-align: right;
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {

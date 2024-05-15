@@ -5,12 +5,10 @@ import { ContactMe } from '@/Components/ContactMe';
 import { Projects } from '@/Components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/wickedcss.min.css';
-import { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
+import { FooterComponent } from '@/Components/FooterComponent';
 
 export default function Home() {
-
-  const [page, setPage] = useState<string>("AboutMe");
 
   return (
     <div className='bg'>
@@ -18,24 +16,24 @@ export default function Home() {
     
         <Nav variant="pills" defaultActiveKey="link" className='justify-center na padding'>
           <Nav.Item>
-            <Nav.Link className='rowdies home nav-text' eventKey="link" onClick={() => {setPage("AboutMe")}}>Home</Nav.Link>
+            <Nav.Link className='rowdies home nav-text' eventKey="link">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className='rowdies projs nav-text' eventKey="link-1" onClick={() => {setPage("Projects")}}>My Projects</Nav.Link>
+            <Nav.Link className='rowdies projs nav-text' eventKey="link-1">My Projects</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className='rowdies art nav-text' eventKey="link-2" onClick={() => {setPage("Gallery")}}>Art Gallery</Nav.Link>
+            <Nav.Link className='rowdies art nav-text' eventKey="link-2">Art Gallery</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className='rowdies con nav-text' eventKey="link-3" onClick={() => {setPage("Contact")}}>Contact Me</Nav.Link>
+            <Nav.Link className='rowdies con nav-text' eventKey="link-3">Contact Me</Nav.Link>
           </Nav.Item>
         </Nav>
 
-        { 
-          page == "AboutMe" ? <AboutMe></AboutMe> : 
-          page == "Gallery" ? <ArtGaller></ArtGaller> : 
-          page == "Projects" ? <Projects></Projects> : <ContactMe></ContactMe> 
-        }
+        <AboutMe></AboutMe>
+        <Projects></Projects>
+        <ArtGaller></ArtGaller>
+        <ContactMe></ContactMe>
+        <FooterComponent></FooterComponent>
     
         </div>
     </div>
