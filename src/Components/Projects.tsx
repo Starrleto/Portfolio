@@ -107,8 +107,8 @@ export const Projects = () => {
       <Row className='different-bg margin-bottom lighter-borders'>
         <Col className='project-col' sm={12} md={6}>
           <a className='project-links' href='https://vindicate.vercel.app/' target='_blank'>➤ Vindicate</a>
-          <p className='rowdies'> This Website is dedicated to the video game I am currently working on, Vindicate. It is a passion project of mine I've been creating in Unity with C#. </p>
-          <p className='rowdies'> It's an RPG with visual novel elements. </p>
+          <p className='rowdies'> This Website is dedicated to the video game I am currently working on, Vindicate. It is a passion project of mine I{`'`}ve been creating in Unity with C#. </p>
+          <p className='rowdies'> It{`'`}s an RPG with visual novel elements. </p>
         </Col>
         <Col className='slideLeft picture' sm={12} md={6}>
           <a href='https://vindicate.vercel.app/' target='_blank'><Image src={vin} alt="Weather App Website" width={500} className='image-skew-r img-fluid border-yeah image-obj'></Image>

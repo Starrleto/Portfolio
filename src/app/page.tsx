@@ -1,7 +1,6 @@
 'use client'
 import AboutMe from '@/Components/AboutMe';
 import { ArtGaller } from '@/Components/ArtGaller';
-import { ContactMe } from '@/Components/ContactMe';
 import { Projects } from '@/Components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/wickedcss.min.css';
@@ -12,7 +11,6 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { emailTime } from '@/DataServices/script';
 
