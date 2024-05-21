@@ -33,16 +33,13 @@ const AboutMe = () => {
 
         <div className='flex'>
 
-<div className='width separate-side'>
-        <div>
+<div className='width separate-side separate-bottom'>
+        <div className='contact'>
           <h1 className='rowdies orang-text big-test'>I{`'`}m Ellie Rasuli</h1>
-          <p className='rowdies big-text'>Back End Developer ✰ Front End Developer ✰ Video Game Developer </p>
-          <p className='rowdies small-line big-text'> Artist ✰ Teacher </p>
+          <p className='rowdies big-text'>Back End Developer ✰ Front End Developer ✰ Video Game Developer ✰ Artist ✰ Teacher </p>
           <p className='ubuntu big-text'>I am a Fullstack developer with a strong passion for art. I combine creativity and logic to create the best products I can achieve.</p>
         </div>
 
-          
-          <h1></h1>
           <div className='flex big-text'>
           ✰
           <a href='https://www.linkedin.com/in/ellie-rasuli/' className='black rowdies separate-side' target='_blank'> LinkedIn </a>
