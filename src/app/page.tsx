@@ -7,7 +7,7 @@ import '../assets/wickedcss.min.css';
 import Nav from 'react-bootstrap/Nav';
 import { FooterComponent } from '@/Components/FooterComponent';
 import { useState } from 'react';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -76,15 +76,13 @@ export default function Home() {
     
         </div>
 
-      <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton></Offcanvas.Header>
-        <Offcanvas.Body>
-
-
+        <Modal show={show} onHide={handleClose} size='lg'>
+        <Modal.Body className='different-bg'>
+          
         <Container>
-                <Row className='contact bigger-padding different-bg lighter-borders' sm={12}>
+                <Row className='contact bigger-padding different-bg lighter-borders'>
 
-                  <div>
+                  <div className='center-text'>
                     <h3 className='bigger-padding rowdies orang-text' id='contact'>Any Questions or Inquiries? Feel free to Contact Me!</h3>
                     <p className='rowdies'>Email: ellierasuli@gmail.com</p>
                     <p className='rowdies'>Phone: (209)-480-4810</p>
@@ -110,16 +108,19 @@ export default function Home() {
                     <Form.Label className='rowdies'>Message</Form.Label>
                     <Form.Control as="textarea" rows={6} placeholder="Type here..." onChange={(e) => [setMessage(e.target.value)]} id='message' />
                 </Form.Group>
-                <Button type="submit" className='rowdies' onClick={sendEmail}>
+                <div>
+                <Button type="submit" className='rowdies' onClick={() => {sendEmail();}} size='lg'>
                     Send!
-                </Button>
+                </Button>  
+                </div>
+
                 </Row>
 
         </Container>
 
+        </Modal.Body>
+      </Modal>
 
-        </Offcanvas.Body>
-      </Offcanvas>
     </div>
   );
 }

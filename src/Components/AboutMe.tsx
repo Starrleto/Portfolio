@@ -30,24 +30,34 @@ const AboutMe = () => {
       </div>
       
     <div>
-      <Row className='different-bg dark-border padding'>
-        <Col className='right separate-bottom' md={12} lg={6}>
+
+        <div className='flex'>
+
+<div className='width separate-side'>
+        <div>
           <h1 className='rowdies orang-text big-test'>I{`'`}m Ellie Rasuli</h1>
           <p className='rowdies big-text'>Back End Developer ✰ Front End Developer ✰ Video Game Developer </p>
           <p className='rowdies small-line big-text'> Artist ✰ Teacher </p>
           <p className='ubuntu big-text'>I am a Fullstack developer with a strong passion for art. I combine creativity and logic to create the best products I can achieve.</p>
+        </div>
+
           
           <h1></h1>
-          <div className='flex'>
+          <div className='flex big-text'>
+          ✰
           <a href='https://www.linkedin.com/in/ellie-rasuli/' className='black rowdies separate-side' target='_blank'> LinkedIn </a>
+          ✰
           <a href='https://github.com/Starrleto' className='black rowdies separate-side' target='_blank'> GitHub </a>
+          ✰
           <a href='https://docs.google.com/document/d/1LuJg9La8zT1I6g_qVHRnDZYYDTJG8JDmdwLmHbYgWnA/edit?usp=sharing' className='black rowdies' target='_blank'> Resume </a>
           </div>
-        </Col>
-        <Col md={12} lg={6}>
+</div>
+
+
           <Image src={head} alt={"A picture of me"} width={300} height={300} className='headshot'></Image>
-        </Col>
-      </Row>
+
+          </div>
+
       <Row className='different-bg-darker padding'>
         <h1 className='orang-text rowdies padding'>My Skills</h1>
 

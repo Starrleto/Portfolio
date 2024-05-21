@@ -10,6 +10,7 @@ import rgb from '../assets/rgb.png'
 import all from '../assets/allforone.png'
 import wea from '../assets/weather.png';
 import vin from '../assets/vindicat.png';
+import ca from '../assets/caddy.png';
 
 export const Projects = () => {
   return (
@@ -103,7 +104,7 @@ export const Projects = () => {
       <hr className='border-color'></hr>
       <h1 className='bigger-padding rowdies orang-text'>Work In Progress...</h1>
       <hr className='border-color'></hr>
-
+{/* Vindicate */}
       <Row className='different-bg margin-bottom lighter-borders'>
         <Col className='project-col' sm={12} md={6}>
           <a className='project-links' href='https://vindicate.vercel.app/' target='_blank'>➤ Vindicate</a>
@@ -118,6 +119,22 @@ export const Projects = () => {
           </a>
         </Col>
       </Row>
+{/* Caddy Track */}
+<Row className='different-bg margin-bottom lighter-borders'>
+        <Col className='slideRight picture' sm={12} md={6}>
+          <a href='https://caddytrackfrontend.vercel.app/' target='_blank'><Image src={ca} alt="Tip Calculator Website" width={500} className='image-skew img-fluid border-yeah image-obj'></Image>
+          <div className='middle'>
+              <p className='rowdies big-text black'>Click to view!</p>
+          </div>
+          </a>
+        </Col>
+        <Col className='project-col' sm={12} md={6}>
+          <a className='project-links' href='https://caddytrackfrontend.vercel.app/' target='_blank'>➤ Caddy Track </a>
+          <p className='rowdies'>This is a fullstack website made by a team of three, including me. I am in charge of backend, so I programmed the endpoints in C# and hosted everything with Microsoft Azure.</p>
+          <p className='rowdies'>So far I have created functional profile creation, login, adding and editing data on profiles, and a live chat created with Signal R.</p>
+        </Col>
+      </Row>
+
 
     </Container>
 

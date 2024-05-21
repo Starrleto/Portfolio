@@ -17,6 +17,11 @@
     padding: 20px;
 }
 
+.padding-top{
+    padding-top: 20px;
+}
+
+
 .small-line{
     line-height: 10px;
 }
@@ -168,8 +173,10 @@
 
 .contact{
     text-align: left;
-    margin-top: 30px;
-    max-width: 500px;
+}
+
+.center-text{
+    text-align: center;
 }
 
 .border-yeah{
@@ -240,6 +247,7 @@
 .flex{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .flex-around{
@@ -248,10 +256,20 @@
     flex-wrap: wrap;
 }
 
+.width{
+    width: 60%;
+}
+
 .right{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .big-test{
@@ -260,7 +278,6 @@
 
 .big-text{
     font-size: 30px;
-    text-align: right;
 }
 
 @media (prefers-reduced-motion: no-preference) {
